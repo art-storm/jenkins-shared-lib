@@ -1,6 +1,6 @@
 #!/usr/bin/env groovy
 
-def execTerraform(command) {
+def call(command) {
     withCredentials([azureServicePrincipal(
             credentialsId: 'azure-service-principle',
             subscriptionIdVariable: 'ARM_SUBSCRIPTION_ID',
