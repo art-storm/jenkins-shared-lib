@@ -26,7 +26,7 @@ def execTerraform(command) {
             clientSecretVariable: 'ARM_CLIENT_SECRET',
             tenantIdVariable: 'ARM_TENANT_ID'
     )])
-            {
-                sh command
-            }
+    {
+        sh command
+    }
 }
